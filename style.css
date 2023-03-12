@@ -113,8 +113,8 @@ body{
     border: 3px solid white;
 
 }
-.container-projetos aside p:hover{
-    background-color: crimson;
+.container-projetos aside p a:hover{
+    color: crimson;
 }
 .container-projetos aside p a{
     text-decoration: none;
@@ -170,18 +170,45 @@ footer{
     display: none;
     
 }
-
-@media screen and (min-width:0px) and (max-width:800px){
-    .container-abouts{
-        width: 100%;
-        height: 150vh;
-    
+@media screen and (min-width:375px)and (max-width:600px){
+    .content-abouts{
+        margin-top: -76px;
     }
+}
+ @media screen and (min-width:390px) and (max-width:600px){
+    .content-hobbies{
+        width: 350px;
+        height: 500px;
+        font-size: 25px;
+        text-align: justify;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:412px)and (max-width:600px){
+    .content-hobbies{
+        width: 350px;
+        height: 600px;
+        font-size: 25px;
+        text-align: justify;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:414px)and (max-width:600px) {
+    .content-hobbies{
+        width: 350px;
+        height: 600px;
+        font-size: 25px;
+        text-align: justify;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:600px){
+   
     .menu{
        display: flex;
        flex-direction: column;
        position: absolute;
-       width: 100%;
+       width: 100vw;
        top: 70px;
        right: 0px;
        background-color: gray;
@@ -242,5 +269,21 @@ footer{
     transform: rotate(-135deg);
     top: -7px;
 
+}
+.container-abouts{
+    width: 100%;
+    height: 180vh;
+
+}
+.container-abouts p{
+    padding: 10px;
+}
+.content-hobbies{
+    margin-top: 100px;
+}
+.content-abouts{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 }
