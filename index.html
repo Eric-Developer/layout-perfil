@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -22,16 +23,16 @@
             <li ><a href="#contatos">Contatos</a></li>
            </ul>
         </nav>
-       <script src="app.js"></script>
     </header>
-     
-    <section id="home" class="container-home">
+    <script src="app.js"></script>
+
+    <div id="home" class="container-home">
         <aside>
         <img src="eu.jpeg" alt="foto">
         <h3>Eric Santos</h3>
         <p>Cursando ADS</p>
     </aside>
-    </section>
+  </div>
     <section id="projetos" class="container-projetos">
       <h1 class="h1">PROJETOS</h1> 
           <aside>
@@ -53,42 +54,42 @@
               <img src="projeto.png" alt="projeto">
             </div>
             <h4>Tela de Cadastro</h4>
-            <p><a  class="button" href="">Abrir</a></p>
+            <p><a  class="button" href="https://eric-developer.github.io/tela-cadastro/" target="_blank">Abrir</a></p>
           </aside>
           <aside>
             <div>
               <img src="projeto.png" alt="projeto">
             </div>
             <h4>Galeria de Sneakers</h4>
-            <p><a  class="button" href="">Abrir</a></p>
+            <p><a  class="button" href="https://eric-developer.github.io/galeris-sneakers/" target="_blank">Abrir</a></p>
           </aside>
           <aside>
               <div>
-                <img src="projeto.png" alt="">
+                <img src="projeto.png" alt="projeto">
               </div>
-              <h4>tela de login</h4>
-              <p><a  class="button" href="">Abrir</a></p>
+              <h4>Menu</h4>
+              <p><a  class="button" href="https://eric-developer.github.io/menu/" target="_blank">Abrir</a></p>
             </aside>
             <aside>
               <div>
                 <img src="projeto.png" alt="">
               </div>
-              <h4>tela de cadastro</h4>
-              <p><a  class="button" href="">Abrir</a></p>
+              <h4>Página Spotify</h4>
+              <p><a  class="button" href="https://eric-developer.github.io/pagina-spotify/" target="_blank">Abrir</a></p>
             </aside>
             <aside>
                 <div>
                   <img src="projeto.png" alt="">
                 </div>
-                <h4>tela de login</h4>
-                <p><a  class="button" href="">Abrir</a></p>
+                <h4>Tela de Login 2.0</h4>
+                <p><a  class="button" href="https://eric-developer.github.io/tela-login-2.0/" target="_blank">Abrir</a></p>
               </aside>
               <aside>
                 <div>
                   <img src="projeto.png" alt="">
                 </div>
-                <h4>tela de cadastro</h4>
-                <p><a  class="button" href="">Abrir</a></p>
+                <h4>Tela de Cadastro 2.0</h4>
+                <p><a  class="button" href="https://eric-developer.github.io/cadastro-2.0/" target="_blank">Abrir</a></p>
               </aside>
           </section>
             <section id="sobre" class="container-abouts"><br>
@@ -96,30 +97,34 @@
                 <p>Me chamo <Strong>Eric Santos</Strong>, tenho 25 anos, natural de <strong>São Bernardo do Campo SP</strong>.Atualmente moro em <strong>Picos PI</strong>.</p>
                 <div class="content-abouts">
                   <div class="content-hobbies">
-               <ul>
-                <h3>Hobbies</h3>
-                    
-                    <li>Futebol</li>
-                    <li>Handebol</li>
-                    <li>Series</li>
-                    <li>Filmes</li>
-                    <li>Animes</li>
-                    <li>UFC</li>
-                </ul>
+
+               <dl>
+                   <dt>Hobbies</dt>
+                    <dd>Futebol</dd>
+                    <dd>Handebol</dd>
+                    <dd>Series</dd>
+                    <dd>Filmes</dd>
+                    <dd>Animes</dd>
+                    <dd>UFC</dd>
+               </dl>
               </div>
               <div class="content-hobbies">
-                <ul>
-                    <h3>Conhecimentos</h3>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVA</li>
-                    <li>PYTHON</li>
-                    <li>TYPESCRIPT</li>
-                    <li>JAVASCRIPT</li>
-                </ul>
+                <dl>
+                    <dt>Conhecimentos</dt>
+                    <dd>HTML</dd>
+                    <dd>CSS</dd>
+                    <dd>JAVA</dd>
+                    <dd>PYTHON</dd>
+                    <dd>TYPESCRIPT</dd>
+                    <dd>JAVASCRIPT</dd>
+                </dl>
               </div>
             </div>
             </section>
-            <footer></footer>
+            <footer id="contatos">
+                <div><a href="https://www.linkedin.com/login/pt" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+            </footer>
 </body>
 </html>

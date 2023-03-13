@@ -139,9 +139,9 @@ body{
 
 }
 
-.container-abouts .content-abouts li{
+.container-abouts .content-abouts dd{
     margin-left: 40px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     color: white;
 
 }
@@ -156,52 +156,38 @@ body{
     width: 300px;
     border: 2px solid white;
     margin-top: 20px;
-}.content-hobbies ul{
+
+}
+.content-hobbies dt{
+    font-size: 20px;
     padding: 40px;
     padding-bottom: 60px;
+    text-align: center;
+    color: white;
 }
 
 footer{
     width: 100%;
     height: 80px;
     background-color: black;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer div a i{
+    margin: 8px;
+    font-size: 40px;
+}
+footer div a i:hover{
+       border: 3px solid white;
 }
 #btn-mobile{
     display: none;
     
 }
-@media screen and (min-width:375px)and (max-width:600px){
-    .content-abouts{
-        margin-top: -76px;
-    }
-}
- @media screen and (min-width:390px) and (max-width:600px){
-    .content-hobbies{
-        width: 350px;
-        height: 500px;
-        font-size: 25px;
-        text-align: justify;
-        padding: 10px;
-    }
-}
-@media screen and (min-width:412px)and (max-width:600px){
-    .content-hobbies{
-        width: 350px;
-        height: 600px;
-        font-size: 25px;
-        text-align: justify;
-        padding: 10px;
-    }
-}
-@media screen and (min-width:414px)and (max-width:600px) {
-    .content-hobbies{
-        width: 350px;
-        height: 600px;
-        font-size: 25px;
-        text-align: justify;
-        padding: 10px;
-    }
-}
+
+
 @media screen and (min-width:0px) and (max-width:600px){
    
     .menu{
@@ -228,12 +214,15 @@ footer{
 
 }
 #nav.active .menu li{
- margin-top: 10px;
- text-align: justify;
+     margin-top: 40px;
 }
-.menu a{
+.menu li a{
     padding: 1rem 0;
     border: 2px soli rgba(0, 0, 0, 0.5);
+}
+#nav.active .menu li a:hover{
+  color: crimson;
+  
 }
 
 #btn-mobile{
@@ -268,22 +257,54 @@ footer{
 #nav.active .hamburger::after{
     transform: rotate(-135deg);
     top: -7px;
-
 }
-.container-abouts{
-    width: 100%;
-    height: 180vh;
 
-}
 .container-abouts p{
     padding: 10px;
 }
-.content-hobbies{
-    margin-top: 100px;
-}
+
 .content-abouts{
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+}
+
+
+@media screen and (min-height:0px) and (max-height:750px){
+    .container-abouts{
+        height: 180vh;
+}
+}
+
+@media screen and (min-height:741px) and (max-height:820px){
+    .container-abouts{
+        height: 150vh;
+}
+}
+@media screen and (min-height:742px) and (max-height:850px){
+    .container-abouts{
+        height: 100vh;
+}
+}
+@media screen and (min-height:821px) and (max-height:900px){
+    .container-abouts{
+        height: 140vh;
+}
+}
+@media screen and (min-height:901px) {
+    .container-abouts{
+        height: 125vh;
+}
+}
+@media screen and (min-height:0px) and (max-height:650px){
+    .container-abouts{
+        height: 200vh;
+}
+}
+@media screen and (min-height:812px) and (max-height:849px){
+    .container-abouts{
+        height: 140vh;
 }
 }
