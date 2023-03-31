@@ -21,8 +21,9 @@ body{
     color: white;
 
 }
-.container-menu h3{
+.container-menu h1{
     padding: 30px;
+    font-size: 20px;
 }
  
 .container-menu nav ul{
@@ -62,7 +63,7 @@ body{
     border: 4px solid crimson;
 
 }
-.container-home h3{
+.container-home h2{
     text-align: center;
     color: white;
 }
@@ -96,14 +97,15 @@ body{
 .container-projetos aside div img{
     margin-top: 60px;
     width: 100%;
-    height: 100%;
+    height: 200px;
     border-radius: 30px;
 
 }
 
-.container-projetos aside h4{
+.container-projetos aside h2{
     color: white;
     text-align: center;
+    font-size:18px ;
 }
 .container-projetos aside p{
     width: 100%;
@@ -197,15 +199,14 @@ footer div a i:hover{
        width: 100vw;
        top: 70px;
        right: 0px;
-       background-color: gray;
+       background-image: linear-gradient(100deg,rgb(0, 0, 8),rgb(19, 82, 125));
        z-index: 1000;
        height: 0px;
        transition: .6s;
        visibility: hidden;
-       overflow-y:hidden;
+       overflow:hidden;
        margin-top: -20px;
     }
-
 
 #nav.active .menu{
     height: 100vh;
@@ -272,8 +273,6 @@ footer div a i:hover{
 }
 
 }
-
-
 
 @media screen and (min-height:500px) and (max-height:550px){
     .container-abouts{
